@@ -2,17 +2,14 @@
   <div class="home">
     <div>
       <h1>🎄TannenBomb 2022 </h1>
-      Farewell Christmas tree & Welcome '23!
-
-      <p>Firework Show and Christmas Tree Burning <br/>
-      Come enjoy a hot cocoa bar and Christmas music at 7pm on New Year's Eve.</p>
+      <i>"Farewell Christmas tree & Welcome '23!"</i>
 
       <section id="schedule">
         <span>Schedule</span>
       <ul>
-        <li>6:00 Hot cocoa bar opens</li>
-        <li>6:55 Pre-Tree Mortar Shells</li>
-        <li>7:00 Firework show and tree burning</li>
+        <li>6:00 Enjoy Hot cocoa bar and Christmas music</li>
+        <li>6:55 Pre-tree Mortar Shells</li>
+        <li>7:00 Firework show and Christmas tree burning</li>
         <li>7:10 The End</li>
       </ul>
       </section>
