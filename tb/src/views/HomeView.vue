@@ -38,7 +38,7 @@
       <div id="schedule2 wob">
         <span class="sep">🕰️</span>
         <section >
-          <h2>6 on New Year's Eve</h2>
+          <h2>6PM on New Year's Eve</h2>
           <ul>
             <li><b>6:00</b> Enjoy Hot cocoa bar and Christmas music</li>
             <li><b>6:55</b> Pre-tree Mortar Shells</li>
