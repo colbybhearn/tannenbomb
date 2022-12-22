@@ -1,13 +1,30 @@
 <template>
   <div class="home">
-    <div>
-      <h1>🎄TannenBomb 2022 🔥</h1>
-      <i>"Farewell Christmas tree & Welcome '23!"</i>
-      <br/>
-      <br/>
-      <div id="schedule">
+
+    <div id="header wob">
+      <section >
+      <h1 class="TextOnFire">TannenBomb🎄2022 </h1>
+      <i>Farewell Christmas tree & Welcome '23!</i>
+      </section>
+    </div>
+    <br />
+    <span class="sep">❤️</span>
+    <div id="axia2 wob">
+      100% of all cash and venmo donations benefit <h2><a href="https://axiacenter.org/" class='axia' style="text-decoration:none;"><b>Axia Pregnancy Center</b></a></h2>
+      <div style="display:inline">
+        Chelsey's venmo account is: <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">https://venmo.com/u/ChelseyAlyse</a> 
+        <br />  
+        <!-- <img src="./../assets/venmoqr.png" style="width:15%" /> -->
+      </div>
+      
+      
+    </div>
+    <br />
+    <br />
+      <div id="schedule2 wob">
+        <span class="sep">⏱️</span>
         <section >
-          <h3>Here's the plan</h3>
+          
           <ul>
             <li>6:00 Enjoy Hot cocoa bar and Christmas music</li>
             <li>6:55 Pre-tree Mortar Shells</li>
@@ -18,45 +35,34 @@
       </div>
 
       <br/>
-      <div id="please">
+      <div id="please2 wob">
+        <span class="sep">🤩</span>
         <section >
-          <span >Please be aware</span>
+          
           <ul style="list-style-type:none;">
-            <li> Let us know that you're coming!</li>
-            <li>❄️ Bring chairs and blankets, ear protection for young'ins (it gets loud!) </li>
-            <li>🚗 Do <i>not</i> park in front yards</li>
+            <li>📨 RSVP through the E-vite or text Chelsey @ <a href="tel:2142638906">214-263-8906 </a></li>
+            <li>❄️ Bring chairs, blankets, and ear protection for young'ins (it gets loud!) </li>
+            <li>🚗 Please do <i>not</i> park in front yards</li>
           </ul>
         </section>
       </div>
 
-      <div id="location">
-        <h3>See you here!</h3>
+      <div id="location2 wob">
+        <span class="sep">📍</span>
         <section>
+          <a href="https://goo.gl/maps/ypf8wdmet9u5S8ke7">
           <p>10862 Lost Creek 
           <br />
           Whitehouse TX, 75791</p>
+        </a>
       
       <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.6202360797915!2d-95.2345455849031!3d32.21446228114558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8648329b53d1631b%3A0x4e48b7b1d53a65c3!2s10862%20Lost%20Creek%2C%20Whitehouse%2C%20TX%2075791!5e0!3m2!1sen!2sus!4v1671342926269!5m2!1sen!2sus" width="600" height="450" style="border:0;margin: auto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     </div>
   
 
-    <div id="axia">
-      
 
-      100% of all cash and venmo donations benefit <h2><a href="https://axiacenter.org/" style="text-decoration:none;color:white;"><b>Axia Pregnancy Center</b></a></h2>
-      <div style="display:inline">
-        Send to <br/><img src ="../assets/venmo.png" style="width:10%;background:transparent;" /><a href="https://venmo.com/u/ChelseyAlyse">https://venmo.com/u/ChelseyAlyse</a> 
-        
-      </div>
-      <img src="./../assets/venmoqr.png" style="width:15%" />
-      
-    </div>
-
-      <H1>TannenBomb 2020</H1>
-      <img src="./../assets/2020 flame.jpeg" style="width:200px">
-      
-    </div>
+    
     
   </div>
 </template>
@@ -73,13 +79,21 @@ export default {
 
 
 <style>
+html {
+  color:lightgreen;
+  background: black;
+}
 
+.wob{
+  color:lightgreen;
+  background: black;
+}
 
 section {
   width: fit-content;
   margin: auto;
-  padding: 30px;
-  color:whitesmoke;  
+  padding: 10px;
+  
 }
 
 div#schedule{
@@ -99,15 +113,26 @@ div#location{
   box-shadow: silver 0px 0px 10px 10px;
 }
 
+.axia{
+  color:#FFADA2
+}
 div#axia{
   background: #FFADA2;
   box-shadow: #FFADA2 0px 0px 10px 10px;
   color: white;
 }
 
-section span{
-  text-align: left;
+.header{
+  color: #fb7c02;
+    /* background: #f70101; */
+    margin: auto;
+    width: 40%;
+    text-align: left;
     display: block;
+    font-size: 1.5em;
+    border-radius: 8px;
+    padding: 10px;
+    transform: skewX(-15deg);
 }
 
 
@@ -115,5 +140,33 @@ ul {
   text-align: left;
 }
 
+
+div#header{
+  background: black;
+  box-shadow: black 0px 0px 10px 10px;
+  /* box-shadow: inset -10px -10px 60px whitesmoke; */
+}
+
+.TextOnFire {
+  font-size: 40px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#ff0000, #48ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+  text-decoration: none;;
+  color: lightgreen;
+}
+
+h1{
+  margin-bottom: 0; 
+}
+
+.sep{
+  font-size: 3em;
+}
 
 </style>

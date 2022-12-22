@@ -2,7 +2,7 @@
   <div class="about">
      <div>Christmas Tree burning is a Hearn family tradition.</div>
 
-     <h2>TannenBomb Recipee</h2>
+     <h2>TannenBomb Recipe</h2>
      <ul>
       <li>1 very dry Christmas tree</li>
       <li>$100 of fireworks</li>
