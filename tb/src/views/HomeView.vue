@@ -3,8 +3,13 @@
 
     <div id="header wob">
       <section >
-      <h1 class="TextOnFire">TannenBomb🎄2022 </h1>
-      <i>Farewell Christmas tree & Hello '23!</i>
+      <h1 class="TextOnFire">TannenBomb</h1>
+      <div id="raft">
+        <span id="tree" class="boujee-text" style="display:inline-block;">🎄</span>
+      </div>
+      <h1 class="TextOnFire">2022 </h1>
+      <br />
+      <i><b>Farewell Christmas Tree & Hello '23!</b></i>
       </section>
     </div>
     <br />
@@ -12,14 +17,14 @@
     <div id="axia2 wob">
       <span class="sep">❤️</span>
       <section>
-        <h2>Benefiting <a href="https://axiacenter.org/" class='axia' style="text-decoration:none;"><b>Axia Pregnancy Center</b></a></h2>
+        <h2>Benefiting<br/> <a href="https://axiacenter.org/" class='axia' style=""><b>Axia Pregnancy Center</b></a></h2>
       
       <div style="">
-        100% of all donations go directly to Axia, whcih provides free and <br />confidential care to patients, treating them with Value, Worth, and Dignity.
+        100% of all donations go directly to Axia, which provides free and <br />confidential care, treating patients with Value, Worth, and Dignity.
         <br/>
         <br/>
-        Donations collected in person and through<br/>
-         Chelsey's Venmo (<a href="https://venmo.com/u/ChelseyAlyse" target="_blank">https://venmo.com/u/ChelseyAlyse</a>) 
+        Donations collected in person and through 
+          <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>
         
         
         
@@ -37,10 +42,10 @@
         <section >
           <h2>6 to 7:15pm on New Year's Eve</h2>
           <ul>
-            <li>6:00 Enjoy Hot cocoa bar and Christmas music</li>
-            <li>6:55 Pre-tree Mortar Shells</li>
-            <li>7:00 Firework show and Christmas tree burning</li>
-            <li>7:15 The End!</li>
+            <li><b>6:00</b> Enjoy Hot cocoa bar and Christmas music</li>
+            <li><b>6:55</b> Pre-tree Mortar Shells</li>
+            <li><b>7:00</b> Firework show and Christmas tree burning</li>
+            <li><b>7:15</b> The End!</li>
           </ul>
         </section>
       </div>
@@ -51,8 +56,8 @@
         <section >
         <h2>Come Prepared for the Fun</h2>
           <ul style="list-style-type:none;">
-            <li>📨 RSVP through the E-vite or text Chelsey @ <a href="tel:2142638906">214-263-8906 </a></li>
-            <li>❄️ Bring chairs, blankets, and ear protection for young'ins (it gets loud!) </li>
+            <li>📨 RSVP through the E-vite or text Chelsey (<a href="tel:2142638906">214-263-8906</a>)</li>
+            <li>❄️ Bring chairs to relax and ear protection for kiddos</li>
             <li>🚗 Please do <i>not</i> park in front yards</li>
           </ul>
         </section>
@@ -73,9 +78,7 @@
     </section>
     </div>
   
-
-
-    
+    <footer>Copyright 2022. Created by The Codesmiths</footer>
     
   </div>
 </template>
@@ -150,6 +153,7 @@ div#axia{
 
 section h2 {
   margin-top: 0px;
+  color:rgb(233, 233, 233);;
 }
 
 ul {
@@ -172,17 +176,106 @@ div#header{
     -webkit-text-fill-color: transparent;
 }
 
+
+#tree2{
+  animation-name: tree;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:normal  ;
+}
+#tree{
+  display:inline-block;
+  margin-bottom:-4px;
+
+}
+#raft{
+  border-bottom: double brown 6px;
+  display:inline-block;
+  margin-bottom: 8px;
+}
+
+
+@keyframes tree {
+  from {
+    font-size: 40px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    background: red;
+  }
+  to {
+    font-size: 40px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#ff0000, #48ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  
+}
+
+.boujee-text {
+  --bg-size: 400%;
+  --color-one: rgb(252, 63, 0);
+  --color-two: hsl(40 95% 55%);
+  font-size: clamp(3rem, 25vmin, 3rem);
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  animation: move-bg 2s infinite linear alternate, shake-it .1s infinite;
+}
+
+.shake {  
+  animation: shake-it .1s infinite linear;
+}
+
+@keyframes shake-it {
+  from{
+    transform: rotate(-1deg)
+  }
+  to {
+    transform: rotate(1deg)
+
+  }
+}
+
+@keyframes move-bg {
+  from{
+    color: unset;    
+  }
+  to {
+    background-position: var(--bg-size) 0;
+    -webkit-text-fill-color: transparent;    
+  }
+}
+
 a{
-  text-decoration: none;;
+  
   color: lightgreen;
 }
 
 h1{
   margin-bottom: 0; 
+  display:inline;
 }
 
 .sep{
   font-size: 3em;
 }
 
+
+iframe {
+  border-radius:15px;
+}
+
+footer {
+font-size: .8em;
+}
 </style>
