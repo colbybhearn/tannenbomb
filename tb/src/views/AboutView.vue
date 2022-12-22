@@ -13,7 +13,11 @@
      <h2>Do you dislike Christmas?</h2>
      <div>No, actually we love Christmas and Jesus, a lot.</div>
 
-     <h2></h2>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
   </div>
 </template>
 

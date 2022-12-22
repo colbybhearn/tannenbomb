@@ -20,14 +20,12 @@
         <h2>Benefiting<br/> <a href="https://axiacenter.org/" class='axia' style=""><b>Axia Pregnancy Center</b></a></h2>
       
       <div style="">
-        100% of all donations go directly to Axia, which provides free and <br />confidential care, treating patients with Value, Worth, and Dignity.
+        <p style="width:65%;text-align: center;margin:auto">
+        100% of all donations go directly to Axia, which provides free and confidential care, treating patients with Value, Worth, and Dignity.
+      </p>
         <br/>
         <br/>
-        Donations collected in person and through 
-          <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>
-        
-        
-        
+        Donations collected in person and through <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>
         <br />  
         <!-- <img src="./../assets/venmoqr.png" style="width:15%" /> -->
       </div>
