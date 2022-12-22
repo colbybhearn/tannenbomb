@@ -4,32 +4,43 @@
     <div id="header wob">
       <section >
       <h1 class="TextOnFire">TannenBomb🎄2022 </h1>
-      <i>Farewell Christmas tree & Welcome '23!</i>
+      <i>Farewell Christmas tree & Hello '23!</i>
       </section>
     </div>
     <br />
-    <span class="sep">❤️</span>
+    
     <div id="axia2 wob">
-      100% of all cash and venmo donations benefit <h2><a href="https://axiacenter.org/" class='axia' style="text-decoration:none;"><b>Axia Pregnancy Center</b></a></h2>
-      <div style="display:inline">
-        Chelsey's venmo account is: <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">https://venmo.com/u/ChelseyAlyse</a> 
+      <span class="sep">❤️</span>
+      <section>
+        <h2>Benefiting <a href="https://axiacenter.org/" class='axia' style="text-decoration:none;"><b>Axia Pregnancy Center</b></a></h2>
+      
+      <div style="">
+        100% of all donations go directly to Axia, whcih provides free and <br />confidential care to patients, treating them with Value, Worth, and Dignity.
+        <br/>
+        <br/>
+        Donations collected in person and through<br/>
+         Chelsey's Venmo (<a href="https://venmo.com/u/ChelseyAlyse" target="_blank">https://venmo.com/u/ChelseyAlyse</a>) 
+        
+        
+        
         <br />  
         <!-- <img src="./../assets/venmoqr.png" style="width:15%" /> -->
       </div>
+    </section>
       
       
     </div>
     <br />
     <br />
       <div id="schedule2 wob">
-        <span class="sep">⏱️</span>
+        <span class="sep">🕰️</span>
         <section >
-          
+          <h2>6 to 7:15pm on New Year's Eve</h2>
           <ul>
             <li>6:00 Enjoy Hot cocoa bar and Christmas music</li>
             <li>6:55 Pre-tree Mortar Shells</li>
             <li>7:00 Firework show and Christmas tree burning</li>
-            <li>7:10 The End!</li>
+            <li>7:15 The End!</li>
           </ul>
         </section>
       </div>
@@ -38,7 +49,7 @@
       <div id="please2 wob">
         <span class="sep">🤩</span>
         <section >
-          
+        <h2>Come Prepared for the Fun</h2>
           <ul style="list-style-type:none;">
             <li>📨 RSVP through the E-vite or text Chelsey @ <a href="tel:2142638906">214-263-8906 </a></li>
             <li>❄️ Bring chairs, blankets, and ear protection for young'ins (it gets loud!) </li>
@@ -49,7 +60,9 @@
 
       <div id="location2 wob">
         <span class="sep">📍</span>
+        
         <section>
+          <h2>Where To Be</h2>
           <a href="https://goo.gl/maps/ypf8wdmet9u5S8ke7">
           <p>10862 Lost Creek 
           <br />
@@ -135,6 +148,9 @@ div#axia{
     transform: skewX(-15deg);
 }
 
+section h2 {
+  margin-top: 0px;
+}
 
 ul {
   text-align: left;

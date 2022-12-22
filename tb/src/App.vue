@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/">You're Invited!</router-link> |
-      <router-link to="/about">What is even going on?</router-link> |
+      <router-link to="/about">FAQ</router-link> |
       <router-link to="/yr2020">2020</router-link>
     </nav>
     <router-view/>
@@ -16,7 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: lightgreen;
-  background: black;
+  background: #182315;
 }
 
 nav {
@@ -24,10 +24,10 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #48ff00;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #fb7c02;
     }
   }
 }
