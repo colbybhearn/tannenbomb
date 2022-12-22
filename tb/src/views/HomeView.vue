@@ -40,12 +40,11 @@
       <div id="schedule2 wob">
         <span class="sep">🕰️</span>
         <section >
-          <h2>6 to 7:15pm on New Year's Eve</h2>
+          <h2>6 on New Year's Eve</h2>
           <ul>
             <li><b>6:00</b> Enjoy Hot cocoa bar and Christmas music</li>
             <li><b>6:55</b> Pre-tree Mortar Shells</li>
             <li><b>7:00</b> Firework show and Christmas tree burning</li>
-            <li><b>7:15</b> The End!</li>
           </ul>
         </section>
       </div>
