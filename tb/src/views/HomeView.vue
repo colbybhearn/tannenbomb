@@ -163,6 +163,7 @@ section h2 {
 
 ul {
   text-align: left;
+  padding-left: 0px;
 }
 
 
