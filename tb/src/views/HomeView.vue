@@ -42,7 +42,7 @@
           <div style="margin: auto;display: inline-block;">
             <h2>6PM on New Year's Eve</h2>
             <ul>
-              <li><b>6:00</b> Enjoy Hot cocoa bar and Christmas music</li>
+              <li><b>6:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
               <li><b>6:55</b> Pre-tree Mortar Shells</li>
               <li><b>7:00</b> Firework show and Christmas tree burning</li>
             </ul>
@@ -59,7 +59,7 @@
             <ul style="list-style-type:none;">
               <li>📨 RSVP via E-vite or text Chelsey at <a href="tel:2142638906">214-263-8906</a></li>
               <li>🙉 Ear protection for sensitive ears</li>
-              <li>❄️ Bring chairs and blankets for 60° temps</li>
+              <li>❄️ Bring chairs and check the temps </li>
               <li>🚗 Please do <i>not</i> park in front yards</li>
             </ul>
           </div>
