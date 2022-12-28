@@ -59,7 +59,7 @@
             <ul style="list-style-type:none;">
               <li>📨 RSVP via E-vite or text Chelsey at <a href="tel:2142638906">214-263-8906</a></li>
               <li>🙉 Ear protection for sensitive ears</li>
-              <li>❄️ Bring chairs and check the temps </li>
+              <li>❄️ Bring chairs and check the temps</li>
               <li>🚗 Please do <i>not</i> park in front yards</li>
             </ul>
           </div>
