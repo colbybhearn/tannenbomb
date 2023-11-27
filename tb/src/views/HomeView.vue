@@ -7,9 +7,9 @@
       <div id="raft">
         <span id="tree" class="boujee-text" style="display:inline-block;">🎄</span>
       </div>
-      <h1 class="TextOnFire">2022 </h1>
+      <h1 class="TextOnFire">2023 </h1>
       <br />
-      <i><b>Farewell Christmas Tree & Hello '23!</b></i>
+      <i><b>Flames Galore & Hello '24!</b></i>
             
       </section>
     </div>
@@ -83,7 +83,7 @@
     
     </div>
   
-    <footer>Copyright 2022. Created by The Codesmiths</footer>
+    <footer>Copyright 2023. Created by <a href="https://thecodesmiths.io" >The Codesmiths</a></footer>
     
   </div>
 </template>
