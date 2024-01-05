@@ -5,7 +5,8 @@
       <router-link to="/about">FAQ</router-link> |
     <br/>
       <router-link to="/yr2020">2020</router-link>  |      
-      <router-link to="/yr2022">2022</router-link>
+      <router-link to="/yr2022">2022</router-link> | 
+      <router-link to="/yr2023">2023</router-link>
     </nav>
     <router-view/>
   </div>

@@ -7,9 +7,9 @@
       <div id="raft">
         <span id="tree" class="boujee-text" style="display:inline-block;">🎄</span>
       </div>
-      <h1 class="TextOnFire">2023 </h1>
+      <h1 class="TextOnFire">2024 </h1>
       <br />
-      <i><b>Flames Galore & Hello '24!</b></i>
+      <i><b>Glowing bright into '25!</b></i>
             
       </section>
     </div>

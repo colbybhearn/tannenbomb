@@ -33,6 +33,13 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/TbYear22.vue')
     }
+  },
+  {
+    path: '/yr2023',
+    name: 'yr2023',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/TbYear23.vue')
+    }
   }
 ]
 
