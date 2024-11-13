@@ -57,7 +57,7 @@
           <h2>Come Prepared for the Fun</h2>
           <div style="margin: auto;display: inline-block;">
             <ul style="list-style-type:none;">
-              <li>📨 RSVP via E-vite or text Chelsey at <a href="tel:2142638906">214-263-8906</a></li>
+              <li>📨 RSVP via E-vite or text Chelsey at <a href="sms:2142638906">214-263-8906</a></li>
               <li>❄️ Bring chairs to relax and ear protection for kiddos</li>
               <li>🚗 Please do <i>not</i> park in front yards</li>
             </ul>
