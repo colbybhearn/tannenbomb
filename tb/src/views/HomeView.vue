@@ -7,9 +7,9 @@
       <div id="raft">
         <span id="tree" class="boujee-text" style="display:inline-block;">🎄</span>
       </div>
-      <h1 class="TextOnFire">2022 </h1>
+      <h1 class="TextOnFire">2024 </h1>
       <br />
-      <i><b>Farewell Christmas Tree & Hello '23!</b></i>
+      <i><b>Glowing bright into '25!</b></i>
             
       </section>
     </div>
@@ -41,8 +41,8 @@
         <section >
           <div style="margin: auto;display: inline-block;">
             <h2>6PM on New Year's Eve</h2>
-            <ul >
-              <li><b>6:00</b> Enjoy Hot cocoa bar and Christmas music</li>
+            <ul>
+              <li><b>6:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
               <li><b>6:55</b> Pre-tree Mortar Shells</li>
               <li><b>7:00</b> Firework show and Christmas tree burning</li>
             </ul>
@@ -57,8 +57,9 @@
           <h2>Come Prepared for the Fun</h2>
           <div style="margin: auto;display: inline-block;">
             <ul style="list-style-type:none;">
-              <li>📨 RSVP via E-vite or text Chelsey at <a href="sms:2142638906">214-263-8906</a></li>
-              <li>❄️ Bring chairs to relax and ear protection for kiddos</li>
+              <li>📨 RSVP via E-vite or text Chelsey at <a href="tel:2142638906">214-263-8906</a></li>
+              <li>🙉 Ear protection for sensitive ears</li>
+              <li>❄️ Bring chairs and check the temps</li>
               <li>🚗 Please do <i>not</i> park in front yards</li>
             </ul>
           </div>
@@ -82,7 +83,7 @@
     
     </div>
   
-    <footer>Copyright 2022. Created by The Codesmiths</footer>
+    <footer>Copyright 2023. Created by <a href="https://thecodesmiths.io" >The Codesmiths</a></footer>
     
   </div>
 </template>
