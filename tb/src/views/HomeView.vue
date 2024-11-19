@@ -42,7 +42,7 @@
           <div style="margin: auto;display: inline-block;">
             <h2>6PM on New Year's Eve</h2>
             <ul>
-              <li><b>6:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
+              <li><b>5:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
               <li><b>6:55</b> Pre-tree Mortar Shells</li>
               <li><b>7:00</b> Firework show and Christmas tree burning</li>
             </ul>
