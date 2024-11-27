@@ -40,7 +40,7 @@
         <span class="sep">🕰️</span>
         <section >
           <div style="margin: auto;display: inline-block;">
-            <h2>6PM on New Year's Eve</h2>
+            <h2>5PM on New Year's Eve</h2>
             <ul>
               <li><b>5:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
               <li><b>6:55</b> Pre-tree Mortar Shells</li>
