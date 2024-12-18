@@ -20,20 +20,20 @@
       <section>
         <h2>Benefiting<br/> <a href="https://axiacenter.org/" class='axia' style=""><b>Axia Pregnancy Center</b></a></h2>
       
-      <div>
+      <div style="width: 100%;">
         <p>
         100% of all donations go to Axia.<br/>
         Providing free and confidential care.<br/>
         Treating patients with Value, Worth, and Dignity.
         <br/>
         
-      </p>
+        </p>
         <br/>
-        <div style="margin: auto;display: inline-block;">
+        <div style="margin: auto;display: inline-block; width:100%">
 
         <h3>Bring a cash donation or give online!</h3>
 
-        <div style="display:flex; flex-wrap: row; justify-content: space-between;">
+        <div style="display:flex; flex-wrap: row; justify-content: space-between; width:100%">
           <div class="payListItem">            
             <a href="https://cash.app/$livingalternatives/20" target="_blank">
               <img src="@/assets/payment/cashApp.png" class="payLogo" style="width:140px">
@@ -325,7 +325,7 @@ p {
 
 @media screen and (max-width: 480px) {
   p {
-    width:65%;
+    width:100%;
     text-align: center;
     margin:auto;
   }
@@ -334,7 +334,8 @@ p {
 .payListItem{
   text-align: center;
   align-content: center;
-  margin:auto 25px;
+  margin:auto;
+  width:30%
   
 }
 
