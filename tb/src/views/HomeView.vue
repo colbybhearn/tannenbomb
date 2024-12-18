@@ -33,7 +33,8 @@
 
         <h3>Bring a cash donation or give online!</h3>
 
-        <div style="display:flex; flex-wrap: row; justify-content: space-between; width:100%">
+        <div style="display:flex; flex-wrap: row; justify-content: space-between; width:100%; max-width: 600px; margin: auto;
+">
           <div class="payListItem">            
             <a href="https://cash.app/$livingalternatives/20" target="_blank">
               <img src="@/assets/payment/cashApp.png" class="payLogo" style="width:140px">
@@ -334,8 +335,7 @@ p {
 .payListItem{
   text-align: center;
   align-content: center;
-  margin:auto;
-  width:30%
+  margin:auto; 
   
 }
 
@@ -343,6 +343,8 @@ p {
   text-decoration: none;
   
 }
+
+
 
 .payLogo{
 }
