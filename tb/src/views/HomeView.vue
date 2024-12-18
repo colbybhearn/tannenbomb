@@ -26,7 +26,8 @@
       </p>
         <br/>
         <br/>
-        <p>Donations collected in person and through <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a></p>
+        <p>Donate cash in person, via <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>, or at <a href="https://livingalternatives.org/support/" target="_blank">AXIA's donation page</a>
+        </p>
         <br />  
         <!-- <img src="./../assets/venmoqr.png" style="width:15%" /> -->
       </div>
