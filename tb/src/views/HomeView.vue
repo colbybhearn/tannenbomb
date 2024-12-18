@@ -22,12 +22,41 @@
       
       <div>
         <p>
-        100% of all donations will go to Axia, which provides free and confidential care, treating patients with Value, Worth, and Dignity.
+        100% of all donations go to Axia.<br/>
+        Providing free and confidential care.<br/>
+        Treating patients with Value, Worth, and Dignity.
+        <br/>
+        
       </p>
         <br/>
-        <br/>
-        <p>Donate cash in person, via <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>, or at <a href="https://livingalternatives.org/support/" target="_blank">AXIA's donation page</a>
-        </p>
+        <div style="margin: auto;display: inline-block;">
+
+        <h3>Bring a cash donation or give online!</h3>
+
+        <div style="display:flex; flex-wrap: row; justify-content: space-between;">
+          <div class="payListItem">            
+            <a href="https://cash.app/$livingalternatives/20" target="_blank">
+              <img src="@/assets/payment/cashApp.png" class="payLogo" style="width:140px">
+            </a>
+          </div>
+          <div class="payListItem">            
+            <a href="https://venmo.com/u/Living-Alternatives" target="_blank"><img src="@/assets/payment/VenmoIcon.webp" class="payLogo" style="width:100px;background:#008cff;padding:10px;border-radius: 15px;"></a>
+          </div>
+          <div class="payListItem">
+            <a href="https://www.paypal.com/paypalme/livingalternatives/20" target="_blank"><img src="@/assets/payment/PayPal-Monogram-FullColor-RGB.png" class="payLogo" style="width:100px">
+            </a>
+          </div>
+            
+          <!-- <li>
+            via <a href="https://venmo.com/u/ChelseyAlyse" target="_blank">Chelsey's Venmo</a>
+          </li> -->
+          
+        </div>
+
+        See <a href="https://giving.livingalternatives.org/?_gl=1*1vfftqr*_ga*MTc4OTM3MDQ5OS4xNzM0NTU0Nzkw*_ga_MMPH5E7L9K*MTczNDU1NDc4OS4xLjEuMTczNDU1NjA2NC4wLjAuMA.." target="_blank">AXIA's website</a> for more options and to setup monthly giving!
+
+        </div>
+        
         <br />  
         <!-- <img src="./../assets/venmoqr.png" style="width:15%" /> -->
       </div>
@@ -43,7 +72,7 @@
           <div style="margin: auto;display: inline-block;">
             <h2>5PM on New Year's Eve</h2>
             <ul>
-              <li><b>5:00</b> Enjoy the food truck, hot cocoa bar, and Christmas music</li>
+              <li><b>5:00</b> Order some <a href="https://www.facebook.com/p/Sauce-Belly-100086469321950/">Sauce Belly</a> tacos! Enjoy the hot cocoa bar, and Christmas music</li>
               <li><b>6:55</b> Pre-tree Mortar Shells</li>
               <li><b>7:00</b> Firework show and Christmas tree burning</li>
             </ul>
@@ -275,7 +304,7 @@ h1{
 }
 
 .sep{
-  font-size: 3em;
+  font-size: 4em;
 }
 
 
@@ -302,4 +331,18 @@ p {
   }
 }
 
+.payListItem{
+  text-align: center;
+  align-content: center;
+  margin:auto 25px;
+  
+}
+
+.payListItem a{
+  text-decoration: none;
+  
+}
+
+.payLogo{
+}
 </style>
