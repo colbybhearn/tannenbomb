@@ -4,7 +4,7 @@
       <div class="container">
         <span class="eyebrow">Memories</span>
         <nav class="year-tabs" aria-label="Past years">
-          <router-link v-for="y in years" :key="y" :to="'/yr' + String(y).slice(2)">{{ y }}</router-link>
+          <router-link v-for="y in years" :key="y" :to="'/yr' + y">{{ y }}</router-link>
         </nav>
         <h1 class="recap-title">TannenBomb <span class="fire-text">{{ year }}</span></h1>
         <p class="lead"><slot name="intro" /></p>
