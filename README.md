@@ -20,6 +20,6 @@ cd tb && npm install && npm run serve
 
 The RSVP form posts to Netlify Forms as form name `rsvp`. A hidden copy in `tb/public/index.html` lets Netlify detect it at deploy time; keep its fields in sync with `tb/src/components/RsvpForm.vue`.
 
-Fields: `name`, `email`, `phone`, `adults`, `kids`, `kid_ages`, `total_guests`, `chairs`, `notes`.
+Fields: `name`, `email`, `phone`, `adults`, `kids`, `kid_ages`, `total_guests`, `chairs`, `heater`, `notes`.
 
 Enable form detection in Netlify (Site configuration → Forms), then view submissions or export CSV to total adults and kids.

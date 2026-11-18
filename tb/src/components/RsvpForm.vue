@@ -92,10 +92,20 @@
         </div>
 
         <div class="field">
-          <span class="label">Will you bring your own chairs?</span>
+          <span class="label">Bringing your own chairs?</span>
           <div class="chips">
             <label v-for="o in chairOptions" :key="o" class="chip">
               <input v-model="chairs" type="radio" name="chairs" :value="o">
+              <span>{{ o }}</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="label">Can you bring an outdoor heater if it's cold out?</span>
+          <div class="chips">
+            <label v-for="o in heaterOptions" :key="o" class="chip">
+              <input v-model="heater" type="radio" name="heater" :value="o">
               <span>{{ o }}</span>
             </label>
           </div>
@@ -137,6 +147,7 @@ const initial = () => ({
   kids: 0,
   kidAges: '',
   chairs: 'Yes',
+  heater: 'No',
   notes: '',
   botField: '',
   status: 'idle',
@@ -153,7 +164,8 @@ export default {
       { key: 'adults', label: 'Adults', hint: 'Ages 13+', icon: '🧑', min: 0, max: 30 },
       { key: 'kids', label: 'Kids', hint: 'Ages 12 & under', icon: '🧒', min: 0, max: 30 }
     ],
-    chairOptions: () => ['Yes', 'Some of us']
+    chairOptions: () => ['Yes', 'Some of us'],
+    heaterOptions: () => ['Yes, I can bring one', 'No']
   },
   methods: {
     step (c, d) {
@@ -185,6 +197,7 @@ export default {
         kid_ages: this.kids ? this.kidAges : '',
         total_guests: this.total,
         chairs: this.chairs,
+        heater: this.heater,
         notes: this.notes
       })
       try {
