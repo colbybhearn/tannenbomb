@@ -119,8 +119,8 @@
         </div>
 
         <p v-if="status === 'error'" class="err block" role="alert">
-          Something went wrong sending your RSVP. Please try again, or text
-          <a :href="'sms:' + contact.sms">{{ contact.name }} at {{ contact.display }}</a>.
+          Something went wrong sending your RSVP. Please try again, or
+          <router-link to="/faq">send us a message</router-link>.
         </p>
       </form>
     </transition>
@@ -128,7 +128,6 @@
 </template>
 
 <script>
-import event from '../event'
 
 const initial = () => ({
   name: '',
@@ -148,7 +147,6 @@ export default {
   name: 'RsvpForm',
   data: initial,
   computed: {
-    contact: () => event.contact,
     total () { return (this.adults || 0) + (this.kids || 0) },
     firstName () { return this.name.split(' ')[0] || 'friend' },
     counters: () => [
