@@ -10,6 +10,10 @@ export default {
   dateLabel: "New Year's Eve · Thursday, Dec 31",
   timeLabel: '5:00 PM',
 
+  // Live RSVP count: your Google Apps Script web app URL (ends in /exec).
+  // Do NOT include ?token=. Leave empty to hide the count.
+  rsvpStatsUrl: '',
+
   hosts: 'Colby & Chelsey Hearn and the Lost Creek neighborhood',
 
   schedule: [

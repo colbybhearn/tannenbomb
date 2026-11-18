@@ -217,6 +217,7 @@ export default {
         })
         if (!res.ok) throw new Error(res.status)
         this.status = 'sent'
+        this.$emit('submitted')
       } catch (err) {
         this.status = 'error'
       }

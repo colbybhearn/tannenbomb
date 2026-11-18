@@ -34,6 +34,11 @@
         </div>
         <p v-else class="live-now">🔥 It's TannenBomb time! 🔥</p>
 
+        <p v-if="stats" class="going">
+          <span class="going-dot" aria-hidden="true" />
+          <strong>{{ stats.total }}</strong> {{ stats.total === 1 ? 'guest' : 'guests' }} coming so far
+        </p>
+
         <div class="hero-ctas">
           <router-link to="/#rsvp" class="btn btn-fire">RSVP now</router-link>
           <router-link to="/#give" class="btn">❤️ Give to AXIA</router-link>
@@ -80,8 +85,13 @@
             <li><span aria-hidden="true">🚗</span> Parking that keeps neighbors happy</li>
             <li><span aria-hidden="true">🎁</span> Giveaways for kiddos</li>
           </ul>
+          <div v-if="stats" class="tally card">
+            <div><span class="tally-num">{{ stats.adults }}</span><span>adults</span></div>
+            <div><span class="tally-num">{{ stats.kids }}</span><span>kids</span></div>
+            <div><span class="tally-num">{{ stats.total }}</span><span>total</span></div>
+          </div>
         </div>
-        <RsvpForm />
+        <RsvpForm @submitted="refreshStatsSoon" />
       </div>
     </section>
 
@@ -172,7 +182,7 @@ const pad = n => String(n).padStart(2, '0')
 export default {
   name: 'HomeView',
   components: { RsvpForm },
-  data: () => ({ event, now: Date.now(), timer: null }),
+  data: () => ({ event, now: Date.now(), timer: null, stats: null, statsTimer: null }),
   computed: {
     countdown () {
       const diff = new Date(event.startsAt).getTime() - this.now
@@ -192,9 +202,34 @@ export default {
   },
   mounted () {
     this.timer = setInterval(() => { this.now = Date.now() }, 1000)
+    this.loadStats()
   },
   beforeDestroy () {
     clearInterval(this.timer)
+    clearTimeout(this.statsTimer)
+  },
+  methods: {
+    // Reads live totals from the Google Sheet's Apps Script (doGet).
+    // Stays hidden if the URL is unset, the request fails, or nobody has RSVPed yet.
+    async loadStats () {
+      if (!event.rsvpStatsUrl) return
+      try {
+        const res = await fetch(event.rsvpStatsUrl)
+        if (!res.ok) return
+        const d = await res.json()
+        const total = Number(d.total) || 0
+        if (total > 0) {
+          this.stats = { total, adults: Number(d.adults) || 0, kids: Number(d.kids) || 0 }
+        }
+      } catch (e) {
+        // Leave the count hidden.
+      }
+    },
+    // The sheet updates a few seconds after Netlify relays the RSVP.
+    refreshStatsSoon () {
+      clearTimeout(this.statsTimer)
+      this.statsTimer = setTimeout(this.loadStats, 8000)
+    }
   }
 }
 </script>
@@ -372,6 +407,30 @@ export default {
 .cd-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 6px; }
 .live-now { font-family: var(--display); font-size: 1.6rem; color: var(--gold); }
 
+.going {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 24px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 201, 85, 0.35);
+  background: rgba(247, 201, 85, 0.08);
+  color: var(--text);
+  animation: pop-in 0.5s ease both;
+}
+.going strong { font-family: var(--display); font-size: 1.25rem; color: var(--gold); }
+.going-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pine);
+  box-shadow: 0 0 0 0 rgba(52, 196, 124, 0.6);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(52, 196, 124, 0); } 100% { box-shadow: 0 0 0 0 rgba(52, 196, 124, 0); } }
+@keyframes pop-in { from { opacity: 0; transform: translateY(6px); } }
+
 .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 @media (max-width: 420px) { .hero-ctas .btn { flex: 1 1 100%; } }
 
@@ -439,6 +498,18 @@ export default {
 /* RSVP */
 .rsvp-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(28px, 5vw, 56px); align-items: start; }
 .rsvp-intro { position: sticky; top: 96px; }
+.tally {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 8px 0 20px;
+  padding: 16px;
+  box-shadow: none;
+  text-align: center;
+  animation: pop-in 0.5s ease both;
+}
+.tally span { display: block; color: var(--muted); font-size: 0.85rem; }
+.tally .tally-num { font-family: var(--display); font-weight: 800; font-size: 1.9rem; line-height: 1.1; color: var(--gold); }
 .why { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 10px; }
 .why li { display: flex; gap: 12px; align-items: center; }
 .why span { font-size: 1.3rem; width: 28px; text-align: center; }
