@@ -75,15 +75,11 @@
             restrooms, and giveaways for the kids.
           </p>
           <ul class="why">
-            <li><span aria-hidden="true">🌮</span> Enough tacos and cocoa for everyone</li>
+            <li><span aria-hidden="true">🌮</span> Enough food and cocoa for everyone</li>
             <li><span aria-hidden="true">🪑</span> Seating and restrooms sized right</li>
             <li><span aria-hidden="true">🚗</span> Parking that keeps neighbors happy</li>
-            <li><span aria-hidden="true">🎁</span> A giveaway for every kid</li>
+            <li><span aria-hidden="true">🎁</span> Giveaways for kiddos</li>
           </ul>
-          <p class="small-note">
-            Prefer to text? Reach {{ event.contact.name }} at
-            <a :href="'sms:' + event.contact.sms">{{ event.contact.display }}</a>.
-          </p>
         </div>
         <RsvpForm />
       </div>
@@ -446,7 +442,6 @@ export default {
 .why { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 10px; }
 .why li { display: flex; gap: 12px; align-items: center; }
 .why span { font-size: 1.3rem; width: 28px; text-align: center; }
-.small-note { color: var(--muted); font-size: 0.95rem; }
 @media (max-width: 860px) {
   .rsvp-grid { grid-template-columns: 1fr; }
   .rsvp-intro { position: static; }

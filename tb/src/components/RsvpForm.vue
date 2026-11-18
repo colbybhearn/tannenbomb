@@ -98,16 +98,6 @@
         </div>
 
         <div class="field">
-          <span class="label">Planning to eat dinner there?</span>
-          <div class="chips">
-            <label v-for="o in eatOptions" :key="o" class="chip">
-              <input v-model="eating" type="radio" name="eating" :value="o">
-              <span>{{ o }}</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="field">
           <label for="rsvp-notes">Anything else? <span class="opt">optional</span></label>
           <textarea id="rsvp-notes" v-model.trim="notes" name="notes" rows="3" placeholder="Accessibility needs, questions, how you can help…" />
         </div>
@@ -143,9 +133,7 @@ const initial = () => ({
   adults: 2,
   kids: 0,
   kidAges: '',
-  vehicles: 1,
   chairs: 'Yes',
-  eating: 'Yes',
   notes: '',
   botField: '',
   status: 'idle',
@@ -161,11 +149,9 @@ export default {
     firstName () { return this.name.split(' ')[0] || 'friend' },
     counters: () => [
       { key: 'adults', label: 'Adults', hint: 'Ages 13+', icon: '🧑', min: 0, max: 30 },
-      { key: 'kids', label: 'Kids', hint: 'Ages 12 & under', icon: '🧒', min: 0, max: 30 },
-      { key: 'vehicles', label: 'Vehicles', hint: 'For parking', icon: '🚙', min: 0, max: 10 }
+      { key: 'kids', label: 'Kids', hint: 'Ages 12 & under', icon: '🧒', min: 0, max: 30 }
     ],
-    chairOptions: () => ['Yes', 'Some of us', 'No, we need seats'],
-    eatOptions: () => ['Yes', 'Maybe', 'No']
+    chairOptions: () => ['Yes', 'Some of us']
   },
   methods: {
     step (c, d) {
@@ -196,9 +182,7 @@ export default {
         kids: this.kids,
         kid_ages: this.kids ? this.kidAges : '',
         total_guests: this.total,
-        vehicles: this.vehicles,
         chairs: this.chairs,
-        eating: this.eating,
         notes: this.notes
       })
       try {

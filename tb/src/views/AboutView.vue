@@ -17,7 +17,7 @@
       </div>
 
       <div class="card more">
-        <p>Still have a question? Text {{ contact.name }} at <a :href="'sms:' + contact.sms">{{ contact.display }}</a>.</p>
+        <p>Still have a question?</p>
         <router-link to="/#rsvp" class="btn btn-fire">RSVP now</router-link>
       </div>
     </div>
