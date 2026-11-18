@@ -112,7 +112,7 @@
         </div>
 
         <div class="field">
-          <label for="rsvp-notes">Anything else? <span class="opt">optional</span></label>
+          <label for="rsvp-notes">Anything else? <span class="opt">optional</span> </label>
           <textarea id="rsvp-notes" v-model.trim="notes" name="notes" rows="3" placeholder="Accessibility needs, questions, how you can help…" />
         </div>
 
