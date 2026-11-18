@@ -14,8 +14,8 @@ export default {
 
   schedule: [
     { time: '5:00', title: 'Gates open', detail: 'Food truck tacos, the hot cocoa bar, and Christmas music.' },
-    { time: '6:55', title: 'Pre-tree mortar shells', detail: 'Find your spot and cover those ears.' },
-    { time: '7:00', title: 'Fireworks & tree burning', detail: 'The main event: a tree on a raft, in a pond, on fire.' },
+    { time: '6:55', title: 'Pre-tree mortar shells', detail: 'Find your spot and cover delicate ears.' },
+    { time: '7:00', title: 'Fireworks & tree burning', detail: 'The main event: a tree on fire, on a raft, in a pond, plus a fireworks show!' },
   ],
 
   food: {
@@ -33,13 +33,11 @@ export default {
 
   contact: {
     name: 'Chelsey',
-    sms: '2142638906',
-    display: '214-263-8906',
   },
 
   axia: {
     site: 'https://axiacenter.org/',
-    giving: 'https://giving.livingalternatives.org/',
+    giving: 'https://livingalternatives.org/donate-2-2/',
     cashApp: 'https://cash.app/$livingalternatives/20',
     venmo: 'https://venmo.com/u/Living-Alternatives',
     paypal: 'https://www.paypal.com/paypalme/livingalternatives/20',
