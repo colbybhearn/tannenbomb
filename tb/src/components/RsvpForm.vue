@@ -86,18 +86,29 @@
           <small v-if="errors.adults" class="err block">{{ errors.adults }}</small>
         </fieldset>
 
-        <div v-if="kids > 0" class="field">
-          <label for="rsvp-ages">Kids' ages <span class="opt">helps us plan giveaways</span></label>
-          <input id="rsvp-ages" v-model.trim="kidAges" name="kid_ages" type="text" placeholder="e.g. 3, 7, 12">
-        </div>
-
-        <div class="field">
-          <span class="label">Bringing your own chairs?</span>
-          <div class="chips">
-            <label v-for="o in chairOptions" :key="o" class="chip">
-              <input v-model="chairs" type="radio" name="chairs" :value="o">
-              <span>{{ o }}</span>
-            </label>
+        <div class="counts">
+          <div class="counter">
+            <div class="counter-label">
+              <span class="counter-icon" aria-hidden="true">{{ chairCounter.icon }}</span>
+              <span>
+                <strong id="lbl-chairs">{{ chairCounter.label }}</strong>
+                <small>{{ chairCounter.hint }}</small>
+              </span>
+            </div>
+            <div class="stepper" role="group" aria-labelledby="lbl-chairs">
+              <button type="button" aria-label="Fewer chairs" :disabled="chairs <= chairCounter.min" @click="step(chairCounter, -1)">−</button>
+              <input
+                v-model.number="chairs"
+                name="chairs"
+                type="number"
+                inputmode="numeric"
+                :min="chairCounter.min"
+                :max="chairCounter.max"
+                aria-labelledby="lbl-chairs"
+                @blur="clamp(chairCounter)"
+              >
+              <button type="button" aria-label="More chairs" :disabled="chairs >= chairCounter.max" @click="step(chairCounter, 1)">+</button>
+            </div>
           </div>
         </div>
 
@@ -145,8 +156,7 @@ const initial = () => ({
   phone: '',
   adults: 2,
   kids: 0,
-  kidAges: '',
-  chairs: 'Yes',
+  chairs: 0,
   heater: 'No',
   notes: '',
   botField: '',
@@ -164,7 +174,7 @@ export default {
       { key: 'adults', label: 'Adults', hint: 'Ages 13+', icon: '🧑', min: 0, max: 30 },
       { key: 'kids', label: 'Kids', hint: 'Ages 12 & under', icon: '🧒', min: 0, max: 30 }
     ],
-    chairOptions: () => ['Yes', 'Some of us'],
+    chairCounter: () => ({ key: 'chairs', label: 'Chairs', hint: 'How many are you bringing?', icon: '🪑', min: 0, max: 30 }),
     heaterOptions: () => ['Yes, I can bring one', 'No']
   },
   methods: {
@@ -194,7 +204,6 @@ export default {
         phone: this.phone,
         adults: this.adults,
         kids: this.kids,
-        kid_ages: this.kids ? this.kidAges : '',
         total_guests: this.total,
         chairs: this.chairs,
         heater: this.heater,
