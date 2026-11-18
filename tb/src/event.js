@@ -12,7 +12,7 @@ export default {
 
   // Live RSVP count: your Google Apps Script web app URL (ends in /exec).
   // Do NOT include ?token=. Leave empty to hide the count.
-  rsvpStatsUrl: '',
+  rsvpStatsUrl: 'https://script.google.com/macros/s/AKfycbzhax1BXVysJjESMqTViQvtsgZ0OJd1HSeGs3sFjV2_I0QmZDMK8szUX5dgKQEMESm3/exec',
 
   hosts: 'Colby & Chelsey Hearn and the Lost Creek neighborhood',
 
