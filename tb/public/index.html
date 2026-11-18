@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"  />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="description" content="TannenBomb: a New Year's Eve fireworks show and Christmas tree burning benefiting AXIA Pregnancy Center. RSVP, schedule, and online giving.">
+    <meta property="og:title" content="TannenBomb · New Year's Eve">
+    <meta property="og:description" content="Fireworks, a burning Christmas tree on a raft, tacos, and cocoa, all benefiting AXIA Pregnancy Center.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tannenbomb.info/">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>TannenBomb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>TannenBomb · New Year's Eve</title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>TannenBomb needs JavaScript enabled to work properly.</strong>
     </noscript>
+
+    <!--
+      Netlify Forms: Netlify scans the built HTML at deploy time to register forms.
+      Because the real RSVP form is rendered by Vue, this hidden copy lets Netlify
+      detect the "rsvp" form and all of its field names. Keep the fields in sync
+      with src/components/RsvpForm.vue.
+    -->
+    <form name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name">
+      <input type="email" name="email">
+      <input type="tel" name="phone">
+      <input type="number" name="adults">
+      <input type="number" name="kids">
+      <input type="text" name="kid_ages">
+      <input type="number" name="total_guests">
+      <input type="number" name="vehicles">
+      <input type="text" name="chairs">
+      <input type="text" name="eating">
+      <textarea name="notes"></textarea>
+      <input type="text" name="bot-field">
+    </form>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

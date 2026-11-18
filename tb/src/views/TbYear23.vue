@@ -1,54 +1,50 @@
 <template>
-    <div class="about">
-       
-      <H1>TannenBomb 2023</H1>
-      <br />
-      <br />
+  <YearRecap :year="2023" :photos="photos" :videos="videos">
+    <template #intro>
       ~150 friends and family joined us for good food, fun music, great fellowship, and a fantastic flame!
-      <br />
-      <br />
-      <b>Thank you</b> to everyone that helped and donated time and money!<br/> 
+      Thank you to everyone who helped and donated time and money.
+    </template>
+    <template #stat>💝 <strong>$1,132.93</strong> raised for AXIA!</template>
+    <template #videoNote>Videography courtesy of Joe Burleson.</template>
 
-      <h1>$1132.93 was raised for AXIA!</h1>
-      <br/>
-      
-      
-      <br />
-      <br/>
-      <img src="./../assets/2023/raft trees.jpg" style="width:25%;margin:30px;" alt="burnination" title="trees mounted">
-      <img src="./../assets/2023/raft back.jpg" style="width:25%;margin:30px;" alt="burnination" title="fireworks ready">
-      <br />
-      <br />
-      <img src="./../assets/2023/colors.jpg" style="width:25%;margin:30px;" alt="burnination" title="colorful">
-      <img src="./../assets/2023/bright.jpg" style="width:25%;margin:30px;" alt="burnination" title="bright">            
-      <br />
-      <br/>
-      <img src="./../assets/2023/finale.jpg" style="width:25%;margin:30px;" alt="burnination" title="finale show">
-      <img src="./../assets/2023/flames.jpg" style="width:25%;margin:30px;" alt="burnination" title="giant flames">
-      
-      <br />
-      <br />
-      Enjoy this great video of the fireworks show and tree burning! (videography courtesy Joe Burleson).
-<br/>      
-      <iframe width="80%"  style="aspect-ratio : 1 / 1; max-width: 700px;"  src="https://www.youtube.com/embed/VPryN5EzcHQ?si=-KFa2PqxayhctFOm" title="Part 1" frameborder="0" allow="" allowfullscreen></iframe>
-
-      <br />
-
-      <br/>
-
-      <b>Special thanks</b> to <a href="https://www.facebook.com/p/Sauce-Belly-100086469321950/">Sauce Belly</a> for serving up delicious food again this year!<br/> 
-      <a href="https://www.facebook.com/p/Sauce-Belly-100086469321950/">
-        <img src="./../assets/2023/sb.jpg" style="width:25%;margin:30px;" alt="sauce belly logo" title="sauce belly taco truck">
+    <div class="card thanks">
+      <a href="https://www.facebook.com/p/Sauce-Belly-100086469321950/" target="_blank" rel="noopener">
+        <img src="@/assets/2023/sb.jpg" alt="Sauce Belly logo" width="96" height="96">
       </a>
+      <p>
+        <strong>Special thanks</strong> to
+        <a href="https://www.facebook.com/p/Sauce-Belly-100086469321950/" target="_blank" rel="noopener">Sauce Belly</a>
+        for serving up delicious tacos again!
+      </p>
     </div>
-  </template>
-  
-  <style scoped>
-  ul {
-    list-style-type: none;
-  }
-  img{
-    box-shadow: black 0px 24px 20px 12px;
-  }
-  </style>
-  
+  </YearRecap>
+</template>
+
+<script>
+import YearRecap from '../components/YearRecap.vue'
+
+export default {
+  name: 'TbYear23',
+  components: { YearRecap },
+  data: () => ({
+    photos: [
+      { src: require('@/assets/2023/raft-trees.jpg'), alt: 'Trees mounted on the raft' },
+      { src: require('@/assets/2023/raft-back.jpg'), alt: 'Fireworks loaded and ready' },
+      { src: require('@/assets/2023/colors.jpg'), alt: 'A sky full of color' },
+      { src: require('@/assets/2023/bright.jpg'), alt: 'Lighting up the pond' },
+      { src: require('@/assets/2023/finale.jpg'), alt: 'The grand finale' },
+      { src: require('@/assets/2023/flames.jpg'), alt: 'Giant flames' }
+    ],
+    videos: [
+      { src: 'https://www.youtube-nocookie.com/embed/VPryN5EzcHQ', title: 'TannenBomb 2023 fireworks and tree burning' }
+    ]
+  })
+}
+</script>
+
+<style scoped>
+.thanks { display: flex; align-items: center; gap: 20px; box-shadow: none; }
+.thanks img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.thanks p { margin: 0; }
+@media (max-width: 480px) { .thanks { flex-direction: column; text-align: center; } }
+</style>
