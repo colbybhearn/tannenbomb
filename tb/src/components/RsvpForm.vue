@@ -9,7 +9,11 @@
           <template v-if="kids"> and <strong>{{ kids }} {{ kids === 1 ? 'kid' : 'kids' }}</strong></template>.
           See you on New Year's Eve!
         </p>
-        <button type="button" class="btn" @click="reset">Submit another RSVP</button>
+        <p class="change-note">
+          Need to change your RSVP? Just
+          <button type="button" class="link-btn" @click="status = 'idle'">submit again</button>
+          with the same email.
+        </p>
       </div>
 
       <form
@@ -212,9 +216,6 @@ export default {
       } catch (err) {
         this.status = 'error'
       }
-    },
-    reset () {
-      Object.assign(this.$data, initial())
     }
   }
 }
@@ -358,6 +359,18 @@ textarea { resize: vertical; min-height: 96px; }
 
 .rsvp-done { text-align: center; padding: 24px 0; }
 .rsvp-done p { color: var(--muted); max-width: 40ch; margin: 0 auto 24px; }
+.rsvp-done .change-note { font-size: 0.95rem; margin-bottom: 0; }
+.link-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--flame);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.link-btn:hover { color: var(--gold); }
 .done-icon { font-size: 4rem; animation: pop 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) both; }
 @keyframes pop { from { transform: scale(0.3); opacity: 0; } }
 
